@@ -1,0 +1,30 @@
+<style>
+    h3 {
+        padding-top: 20px
+    }
+</style>
+
+<div>
+    <h3>
+        <a href="/view/{{article.id}}">标题：{{article.title}}</a>
+    </h3>
+    <div class="content">
+        {{ article.content }}
+    </div>
+</div>
+
+<h3>评论</h3>
+    {% for comment in comments %}
+    <p>
+        {{comment.detail}}
+    </p>
+    <hr>
+    {% endfor %}
+
+<form action="/comment/add/" method="post"> {% csrf_token %}
+    <p>内容:<textarea name="detail"></textarea></p>
+    <input type = "hidden" name = "article" value = "{{article.id}}">
+    <p><input type="submit"></p>
+</form>
+    
+    <a href="/list">返回</a>

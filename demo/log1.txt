@@ -1,0 +1,9 @@
+2018-06-03 15:35:44 ERROR number not equals 4
+2018-06-03 15:43:22 ERROR number not equals 4
+2018-06-03 15:44:13 ERROR number not equals 4
+2018-06-03 15:51:41 ERROR number not equals 4
+2018-06-03 15:58:16 ERROR number not equals 4
+2018-06-03 15:58:16 DEBUG 1, 'a new except'
+2018-06-03 15:58:22 ERROR number not equals 4
+2018-06-03 15:58:22 DEBUG 1, 'a new except'
+2018-06-03 16:13:46 ERROR number not equals 4
